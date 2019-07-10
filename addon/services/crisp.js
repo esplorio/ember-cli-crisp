@@ -70,6 +70,9 @@ export default Service.extend({
   hide() {
     return this._callDo('chat:hide'), this;
   },
+  helpdesk() {
+    return this._callDo('helpdesk:search'), this;
+  },
 
   // Messaging
   sendMessage(type, content) {
